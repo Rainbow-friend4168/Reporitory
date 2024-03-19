@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+body{
+    background-color: #181818;
+    color:white;
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 24px;
+    padding: 0 15%;
+}
+.container{
+    margin:1% auto;
+    position: relative;
+}
+.slider{
+    width: 50%;
+    height:auto;
+    margin: auto;
+    overflow: hidden;
+}
+.back{
+    position: absolute;
+    bottom: 50%;
+    left:5%
+}
+.original-button {
+    line-height: 1;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    border: 2px dashed #000000;
+    transition: 0.3s;
+    background-color: #ffffff;
+}
+.original-button:hover {
+    opacity: .5;
+}
+.next{
+    position: absolute;
+    bottom: 50%;
+    right:5%
+}
+.line{
+    display: flex;
+    transition: all 1s;
+}
+.heding{
+    text-align: center;
+    font-size: 1.12em;
+    letter-spacing: 20px;
+}
+.heding1{
+    text-align: center;
+    font-size: 1.12em;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.img5{
+    width:350px;
+}
+.img div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Poslugi{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.gallery{
+    display: grid;
+    grid-template-columns:1.5fr 0.5fr 2fr;
+    grid-gap:1%;
+    padding: 10%;
+}
+.img1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start:1;
+    grid-column-end:2;
+}
+.img2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:2 ;
+    grid-column-end:3;
+    width:97%
+}
+.img4{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:2 ;
+    grid-column-end:3;
+    height: 100%;
+}
+.img3{
+    grid-row-start: 1;
+    grid-row-end:3;
+    grid-column-start:3;
+    grid-column-end:4;
+}
+.img{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.heding2{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+section{
+    margin: 5%;
+}
+@media screen and (max-width:600px){
+    .img3{
+        display: none;
+    }
+    .gallery{
+        grid-template-columns:3.2fr 2fr;
+        width:100%;
+    }
+    .gallery img{
+        width: 100%;
+    }
+    .img2{
+        height:100%;
+    }
+    .img4{
+        height: 100%;
+    }
+    body{
+        font-size: 16px;
+    }
+    .heding{
+        letter-spacing: 17px;
+    }
+    .div0{
+        flex-direction: column-reverse;
+    }
+    .Poslugi img{
+        width:100%;
+    }
+}
